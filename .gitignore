@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+env/
+logs/*.jsonl
+*.log
+.pytest_cache/
+.coverage
+instance/
+.DS_Store
+node_modules/
+*.sqlite3
+.venv
