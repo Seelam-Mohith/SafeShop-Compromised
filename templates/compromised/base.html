@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ShopSafe Lab - Everyday essentials{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% if lab_simulation_enabled %}
+    <div class="lab-banner" role="note">
+        Cybersecurity Lab — Simulated Environment
+    </div>
+    {% endif %}
+    <header>
+        <nav class="navbar container">
+            <a href="{{ url_for('index') }}" class="logo">ShopSafe Lab</a>
+            <form class="search-box" action="{{ url_for('products') }}" method="get">
+                <input type="text" name="q" placeholder="Search products..." value="{{ request.args.get('q', '') }}">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('category', category_name='Electronics') }}">Categories</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+                {% if lab_simulation_enabled %}
+                <li><a href="{{ url_for('lab_test_index') }}">Lab Tests</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <a href="{{ url_for('about') }}">About Us</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <a href="{{ url_for('contact') }}">Support</a>
+                    <a href="{{ url_for('privacy') }}">FAQs</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="{{ url_for('privacy') }}">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopSafe Lab. Simulated e-commerce for cybersecurity education. No real transactions.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

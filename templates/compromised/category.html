@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ category_name }} - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <h1 class="section-title">{{ category_name }}</h1>
+    <p style="margin-bottom: 1rem; color: #64748b;">Showing {{ products|length }} product(s)</p>
+    <div class="grid">
+        {% for product in products %}
+        <div class="product-card">
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="product-img">
+            <div class="product-info">
+                <a href="{{ url_for('product_detail', product_id=product.id) }}" class="product-name">{{ product.name }}</a>
+                <div class="product-price">₹{{ product.price }}</div>
+                <div class="product-meta">{{ product.category }} • ★ {{ product.rating }}</div>
+                <div class="product-actions">
+                    <a href="{{ url_for('product_detail', product_id=product.id) }}" class="btn-sm btn-outline">View Details</a>
+                    <button class="btn-sm btn-primary add-to-cart-btn" data-product-id="{{ product.id }}">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="empty-state" style="grid-column: 1/-1;">
+            <p>No products found in this category.</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

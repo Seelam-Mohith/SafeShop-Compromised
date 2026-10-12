@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}ShopSafe Lab - Home{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Everyday essentials. Shopping made simple.</h1>
+        <p>Discover quality products at great prices</p>
+        <a href="{{ url_for('products') }}" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Featured Categories</h2>
+    <div class="grid">
+        {% for cat in ['Electronics', 'Fashion', 'Home and Kitchen', 'Books', 'Accessories'] %}
+        <div class="product-card">
+            <div class="product-info">
+                <h3>{{ cat }}</h3>
+                <p class="product-desc">Browse {{ cat }} products</p>
+                <a href="{{ url_for('category', category_name=cat) }}" class="btn-sm btn-outline">View Category</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="grid">
+        {% for product in featured_products %}
+        <div class="product-card">
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="product-img">
+            <div class="product-info">
+                <a href="{{ url_for('product_detail', product_id=product.id) }}" class="product-name">{{ product.name }}</a>
+                <div class="product-price">₹{{ product.price }}</div>
+                <div class="product-meta">{{ product.category }} • ★ {{ product.rating }}</div>
+                <div class="product-actions">
+                    <a href="{{ url_for('product_detail', product_id=product.id) }}" class="btn-sm btn-outline">View Details</a>
+                    <button class="btn-sm btn-primary add-to-cart-btn" data-product-id="{{ product.id }}">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Best Selling Products</h2>
+    <div class="grid">
+        {% for product in best_selling %}
+        <div class="product-card">
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="product-img">
+            <div class="product-info">
+                <a href="{{ url_for('product_detail', product_id=product.id) }}" class="product-name">{{ product.name }}</a>
+                <div class="product-price">₹{{ product.price }}</div>
+                <div class="product-meta">{{ product.category }} • ★ {{ product.rating }}</div>
+                <div class="product-actions">
+                    <a href="{{ url_for('product_detail', product_id=product.id) }}" class="btn-sm btn-outline">View Details</a>
+                    <button class="btn-sm btn-primary add-to-cart-btn" data-product-id="{{ product.id }}">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

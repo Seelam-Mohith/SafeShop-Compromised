@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}ShopSafe Lab - Cart{% endblock %}
+{% block content %}
+<section class="section">
+    <h1 class="section-title">Shopping Cart</h1>
+    <div id="cart-container"></div>
+    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: space-between; flex-wrap: wrap;">
+        <a href="{{ url_for('products') }}" class="btn-sm btn-outline">Continue Shopping</a>
+        <button class="btn-sm btn-primary" onclick="alert('Checkout is a demonstration only - no order will be processed.')">Checkout (Demo)</button>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cart = getCart();
+    const container = document.getElementById('cart-container');
+    if (!cart || cart.length === 0) {
+        container.innerHTML = '<div class="empty-state"><p>Your cart is empty.</p></div>';
+        return;
+    }
+    const products = {{ products|tojson }};
+    const productMap = {};
+    products.forEach(p => { productMap[p.id] = p; });
+    let html = '<div class="cart-items">';
+    let subtotal = 0;
+    cart.forEach(item => {
+        const p = productMap[item.id];
+        if (!p) return;
+        const itemTotal = p.price * item.quantity;
+        subtotal += itemTotal;
+        html += `
+        <div class="cart-item">
+            <img src="${p.image}" alt="${p.name}" class="cart-item-img">
+            <div class="cart-item-info">
+                <h4>${p.name}</h4>
+                <p>${p.category}</p>
+                <p>₹${p.price} each</p>
+            </div>
+            <div class="cart-item-actions">
+                <button onclick="updateCartQuantity(${item.id}, ${item.quantity - 1})">-</button>
+                <span>${item.quantity}</span>
+                <button onclick="updateCartQuantity(${item.id}, ${item.quantity + 1})">+</button>
+                <button onclick="removeFromCart(${item.id})">Remove</button>
+                <strong>₹${itemTotal}</strong>
+            </div>
+        </div>`;
+    });
+    html += '</div>';
+    html += `
+    <div class="cart-summary">
+        <div class="cart-summary-row"><span>Subtotal</span><span>₹${subtotal}</span></div>
+        <div class="cart-summary-row"><span>Shipping</span><span>Free</span></div>
+        <div class="cart-summary-row cart-summary-total"><span>Total</span><span>₹${subtotal}</span></div>
+    </div>`;
+    container.innerHTML = html;
+});
+</script>
+{% endblock %}

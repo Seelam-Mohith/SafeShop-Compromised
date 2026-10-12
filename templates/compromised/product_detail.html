@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <a href="{{ url_for('products') }}">← Back to Products</a>
+    <div class="detail-layout">
+        <div>
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="detail-img">
+        </div>
+        <div class="detail-info">
+            <h1>{{ product.name }}</h1>
+            <p class="detail-meta">{{ product.category }} • ★ {{ product.rating }}</p>
+            <div class="detail-price">₹{{ product.price }}</div>
+            <p>{{ product.description }}</p>
+            <p class="detail-meta">Stock: {{ product.stock }}</p>
+            <div class="detail-actions">
+                <div class="qty-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="{{ product.stock }}" value="1">
+                </div>
+                <button class="btn-sm btn-primary add-to-cart-btn" data-product-id="{{ product.id }}">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
