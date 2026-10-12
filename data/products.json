@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Noise-Cancelling Headphones",
+    "description": "Over-ear headphones with active noise cancellation",
+    "price": 5999,
+    "category": "Electronics",
+    "image": "/static/images/headphones.svg",
+    "rating": 4.5,
+    "stock": 15,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Gaming Keyboard",
+    "description": "RGB mechanical keyboard with tactile switches",
+    "price": 3999,
+    "category": "Electronics",
+    "image": "/static/images/keyboard.svg",
+    "rating": 4.7,
+    "stock": 12,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Wireless Optical Mouse",
+    "description": "Ergonomic wireless mouse with long battery life",
+    "price": 1299,
+    "category": "Electronics",
+    "image": "/static/images/mouse.svg",
+    "rating": 4.3,
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Canvas Backpack",
+    "description": "Durable 15-inch laptop backpack with multiple compartments",
+    "price": 2499,
+    "category": "Fashion",
+    "image": "/static/images/backpack.svg",
+    "rating": 4.4,
+    "stock": 18,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Stainless Steel Water Bottle",
+    "description": "Insulated water bottle keeps drinks cold for 24 hours",
+    "price": 899,
+    "category": "Home and Kitchen",
+    "image": "/static/images/bottle.svg",
+    "rating": 4.6,
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "LED Desk Lamp",
+    "description": "Adjustable brightness LED desk lamp with touch control",
+    "price": 1799,
+    "category": "Home and Kitchen",
+    "image": "/static/images/lamp.svg",
+    "rating": 4.2,
+    "stock": 16,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Set of 3 Notebooks",
+    "description": "Premium hardbound notebooks for notes and journaling",
+    "price": 699,
+    "category": "Books",
+    "image": "/static/images/notebook.svg",
+    "rating": 4.5,
+    "stock": 25,
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Programming Essentials Book",
+    "description": "Comprehensive guide to Python programming",
+    "price": 999,
+    "category": "Books",
+    "image": "/static/images/book.svg",
+    "rating": 4.8,
+    "stock": 10,
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Leather Wallet",
+    "description": "Slim genuine leather wallet with RFID protection",
+    "price": 1499,
+    "category": "Accessories",
+    "image": "/static/images/wallet.svg",
+    "rating": 4.4,
+    "stock": 22,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Polarized Sunglasses",
+    "description": "UV400 polarized sunglasses for outdoor protection",
+    "price": 1999,
+    "category": "Accessories",
+    "image": "/static/images/sunglasses.svg",
+    "rating": 4.3,
+    "stock": 14,
+    "featured": true
+  },
+  {
+    "id": 11,
+    "name": "Cotton T-Shirt",
+    "description": "Soft 100% cotton crew neck t-shirt",
+    "price": 799,
+    "category": "Fashion",
+    "image": "/static/images/tshirt.svg",
+    "rating": 4.2,
+    "stock": 35,
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Denim Jeans",
+    "description": "Classic straight-fit denim jeans",
+    "price": 2999,
+    "category": "Fashion",
+    "image": "/static/images/jeans.svg",
+    "rating": 4.5,
+    "stock": 20,
+    "featured": true
+  },
+  {
+    "id": 13,
+    "name": "Non-Stick Cookware Set",
+    "description": "5-piece non-stick cookware set for everyday cooking",
+    "price": 3499,
+    "category": "Home and Kitchen",
+    "image": "/static/images/cookware.svg",
+    "rating": 4.6,
+    "stock": 8,
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Bluetooth Speaker",
+    "description": "Portable waterproof Bluetooth speaker",
+    "price": 2499,
+    "category": "Electronics",
+    "image": "/static/images/speaker.svg",
+    "rating": 4.4,
+    "stock": 13,
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "Wristwatch",
+    "description": "Elegant stainless steel analog wristwatch",
+    "price": 3299,
+    "category": "Accessories",
+    "image": "/static/images/watch.svg",
+    "rating": 4.7,
+    "stock": 9,
+    "featured": true
+  }
+]
