@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}About - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <h1 class="section-title">About ShopSafe Lab</h1>
+    <p style="max-width: 800px;">
+        ShopSafe Lab is the simulated, deliberately-compromised counterpart of the
+        legitimate ShopSafe storefront. It mirrors the same visual design and
+        fictional product data, but includes a set of clearly-labelled test routes
+        used to generate controlled security evidence for the Watering-Hole
+        Detection Laboratory.
+    </p>
+    <p style="max-width: 800px; margin-top: 1rem;">
+        All suspicious behavior is simulated, hard-coded, and restricted to this
+        local machine. The application does not deploy malware, exploit
+        vulnerabilities, collect credentials, or contact real external systems.
+    </p>
+</section>
+{% endblock %}

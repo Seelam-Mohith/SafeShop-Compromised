@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Admin Test - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <div class="empty-state">
+        <h2>Simulated Admin Path</h2>
+        <p>This route returns a static laboratory response.</p>
+        <p style="margin-top: 0.5rem;">
+            It is <strong>not</strong> an administrative panel: no authentication,
+            no privilege, no filesystem access, and no data of any kind.
+        </p>
+        <p style="margin-top: 0.5rem;">Path: <code>/lab-test/admin-test</code></p>
+        <a href="{{ url_for('lab_test_index') }}" class="btn-sm btn-primary" style="margin-top: 1rem; display: inline-block;">Back to Lab Tests</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Method Check - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <div class="empty-state">
+        <h2>Method Check</h2>
+        <p>Request method recorded: <code>{{ method }}</code></p>
+        <p style="margin-top: 0.5rem;">
+            This endpoint accepts <code>GET</code> only. Sending an unsupported
+            method returns the framework's normal <code>405</code> response,
+            which is still logged. No action is taken based on the method.
+        </p>
+        <a href="{{ url_for('lab_test_index') }}" class="btn-sm btn-primary" style="margin-top: 1rem; display: inline-block;">Back to Lab Tests</a>
+    </div>
+</section>
+{% endblock %}

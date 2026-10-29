@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% block title %}Security Dashboard - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <div class="dashboard-header">
+        <div>
+            <h1 class="section-title">Security Dashboard</h1>
+            <p class="dashboard-subtitle">
+                Live view of <code>{{ web_log_file }}</code> and the detection
+                report in <code>{{ report_file }}</code>. Local lab data only.
+            </p>
+        </div>
+        <form method="post" action="{{ url_for('dashboard_detect') }}">
+            <button type="submit" class="btn-sm btn-primary">Run Detection</button>
+        </form>
+    </div>
+
+    {% if request.args.get('updated') %}
+    <div class="alert">Detection report refreshed from the current web logs.</div>
+    {% endif %}
+    {% if request.args.get('error') %}
+    <div class="alert">Detection could not be completed. Showing the last saved report.</div>
+    {% endif %}
+
+    <div class="stat-grid">
+        <div class="stat-card accent">
+            <div class="stat-label">Web log entries</div>
+            <div class="stat-value">{{ summary.total_requests }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Legitimate requests</div>
+            <div class="stat-value">{{ summary.legitimate_requests }}</div>
+        </div>
+        <div class="stat-card warning">
+            <div class="stat-label">Suspicious requests</div>
+            <div class="stat-value">{{ summary.suspicious_requests }}</div>
+        </div>
+        <div class="stat-card danger">
+            <div class="stat-label">Detected attacks</div>
+            <div class="stat-value">{{ summary.total_alerts }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Unique IPs</div>
+            <div class="stat-value">{{ summary.unique_ips }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Unique paths</div>
+            <div class="stat-value">{{ summary.unique_paths }}</div>
+        </div>
+    </div>
+
+    <div class="dashboard-columns">
+        <div class="panel">
+            <h3>Attacks by indicator</h3>
+            {% if attack_counts %}
+            <ul class="breakdown-list">
+                {% for name, count in attack_counts %}
+                <li>
+                    <span>{{ name|replace('_', ' ')|title }}</span>
+                    <strong>{{ count }}</strong>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="empty-state">No detection alerts yet.</p>
+            {% endif %}
+        </div>
+        <div class="panel">
+            <h3>Alerts by severity</h3>
+            {% if severity_counts %}
+            <ul class="breakdown-list">
+                {% for name, count in severity_counts %}
+                <li>
+                    <span class="severity-badge severity-{{ name }}">{{ name }}</span>
+                    <strong>{{ count }}</strong>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="empty-state">No detection alerts yet.</p>
+            {% endif %}
+        </div>
+        <div class="panel">
+            <h3>Requests by method</h3>
+            {% if method_counts %}
+            <ul class="breakdown-list">
+                {% for name, count in method_counts %}
+                <li>
+                    <span>{{ name }}</span>
+                    <strong>{{ count }}</strong>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="empty-state">No web log entries yet.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Detected Attacks &amp; Detection Report</h2>
+        <div class="table-tools">
+            <input type="search" id="report-filter"
+                   placeholder="Search path, IP, indicator, details...">
+            <select id="report-severity" data-filter="severity">
+                <option value="">All severities</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+        <div class="table-wrap">
+            <table class="dashboard-table" id="report-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Site</th>
+                        <th>Method</th>
+                        <th>Path</th>
+                        <th>Status</th>
+                        <th>Client IP</th>
+                        <th>Indicator</th>
+                        <th>Severity</th>
+                        <th>Details</th>
+                        <th>Request ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in report %}
+                    {% set severity = (row.severity or 'unknown')|lower %}
+                    {% set status = row.http_status_code or '' %}
+                    {% set site = row.site_identifier or '' %}
+                    <tr data-severity="{{ severity }}">
+                        <td class="mono">{{ row.timestamp or '-' }}</td>
+                        <td>
+                            {% if site %}
+                            <span class="badge {% if site == 'legitimate' %}site-legitimate{% else %}site-suspicious{% endif %}">{{ site }}</span>
+                            {% else %}-{% endif %}
+                        </td>
+                        <td>{{ row.http_method or '-' }}</td>
+                        <td class="mono">{{ row.requested_path or '-' }}</td>
+                        <td>
+                            {% if status %}
+                            <span class="status-badge status-{{ status[0] }}xx">{{ status }}</span>
+                            {% else %}-{% endif %}
+                        </td>
+                        <td class="mono">{{ row.client_ip_address or '-' }}</td>
+                        <td>{{ (row.indicator_type or 'unknown')|replace('_', ' ')|title }}</td>
+                        <td><span class="severity-badge severity-{{ severity }}">{{ severity }}</span></td>
+                        <td>{{ row.details or '-' }}</td>
+                        <td class="mono">{{ row.request_id or '-' }}</td>
+                    </tr>
+                    {% else %}
+                    <tr class="table-empty-row">
+                        <td colspan="10" class="table-empty">No detection report entries found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Web Logs</h2>
+        <div class="table-tools">
+            <input type="search" id="log-filter"
+                   placeholder="Search path, IP, method, user agent, referrer...">
+            <select id="log-site" data-filter="site">
+                <option value="">All sites</option>
+                {% for site in log_sites %}
+                <option value="{{ site }}">{{ site|title }}</option>
+                {% endfor %}
+            </select>
+            <select id="log-method" data-filter="method">
+                <option value="">All methods</option>
+                {% for method in log_methods %}
+                <option value="{{ method }}">{{ method }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="table-wrap">
+            <table class="dashboard-table" id="log-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Site</th>
+                        <th>Method</th>
+                        <th>Path</th>
+                        <th>Status</th>
+                        <th>Client IP</th>
+                        <th>User Agent</th>
+                        <th>Referrer</th>
+                        <th>Request ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in web_logs %}
+                    {% set status = row.http_status_code or '' %}
+                    {% set site = row.site_identifier or '' %}
+                    <tr data-site="{{ site|lower }}" data-method="{{ (row.http_method or '')|upper }}">
+                        <td class="mono">{{ row.timestamp or '-' }}</td>
+                        <td>
+                            {% if site %}
+                            <span class="badge {% if site == 'legitimate' %}site-legitimate{% else %}site-suspicious{% endif %}">{{ site }}</span>
+                            {% else %}-{% endif %}
+                        </td>
+                        <td>{{ row.http_method or '-' }}</td>
+                        <td class="mono">{{ row.requested_path or '-' }}</td>
+                        <td>
+                            {% if status %}
+                            <span class="status-badge status-{{ status[0] }}xx">{{ status }}</span>
+                            {% else %}-{% endif %}
+                        </td>
+                        <td class="mono">{{ row.client_ip_address or '-' }}</td>
+                        <td class="mono">{{ row.user_agent or '-' }}</td>
+                        <td class="mono">{{ row.referrer or '-' }}</td>
+                        <td class="mono">{{ row.request_id or '-' }}</td>
+                    </tr>
+                    {% else %}
+                    <tr class="table-empty-row">
+                        <td colspan="9" class="table-empty">No web log entries found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+    function setupFilter(tableId, searchId, selectIds) {
+        var table = document.getElementById(tableId);
+        var search = document.getElementById(searchId);
+        if (!table || !search || !table.tBodies.length) {
+            return;
+        }
+        var selects = selectIds.map(function (id) {
+            return document.getElementById(id);
+        }).filter(Boolean);
+
+        function apply() {
+            var query = (search.value || '').toLowerCase();
+            var rows = table.tBodies[0].rows;
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                if (row.classList.contains('table-empty-row')) {
+                    continue;
+                }
+                var matches = !query || row.textContent.toLowerCase().indexOf(query) !== -1;
+                for (var j = 0; j < selects.length; j++) {
+                    var value = (selects[j].value || '').toLowerCase();
+                    if (!value) {
+                        continue;
+                    }
+                    var key = selects[j].getAttribute('data-filter');
+                    if ((row.getAttribute('data-' + key) || '').toLowerCase() !== value) {
+                        matches = false;
+                    }
+                }
+                row.style.display = matches ? '' : 'none';
+            }
+        }
+
+        search.addEventListener('input', apply);
+        selects.forEach(function (select) {
+            select.addEventListener('change', apply);
+        });
+    }
+
+    setupFilter('report-table', 'report-filter', ['report-severity']);
+    setupFilter('log-table', 'log-filter', ['log-site', 'log-method']);
+})();
+</script>
+{% endblock %}

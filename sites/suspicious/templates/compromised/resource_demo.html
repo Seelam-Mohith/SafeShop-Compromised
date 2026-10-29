@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Resource Demo - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <h1 class="section-title">Unexpected Resource Origin — Demo</h1>
+    <div class="alert">
+        The script loaded below is inert, same-origin, and served by this local
+        application. It only writes a lab marker into the page. It does not read
+        cookies, collect data, fingerprint the browser, or contact any network.
+        Because it shares this application's origin, this is a
+        <strong>path-level</strong> indicator, not proof of a cross-origin
+        resource.
+    </div>
+
+    <div id="lab-resource-marker" style="margin-top: 1.5rem; padding: 1rem; border: 1px dashed #2563eb; border-radius: 8px;">
+        Awaiting inert lab resource...
+    </div>
+
+    <p style="margin-top: 1rem;">
+        Loaded resource: <code>/lab-test/resources/unapproved.js</code>
+    </p>
+    <a href="{{ url_for('lab_test_index') }}" class="btn-sm btn-primary" style="display: inline-block;">Back to Lab Tests</a>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('lab_unapproved_resource') }}"></script>
+{% endblock %}

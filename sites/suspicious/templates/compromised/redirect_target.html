@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Redirect Target - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <div class="empty-state">
+        <h2>Lab Notice</h2>
+        <p>This is the fixed, local destination for the simulated redirect test.</p>
+        <p style="margin-top: 0.5rem;">Path: <code>/lab-test/redirect-target</code></p>
+        <a href="{{ url_for('index') }}" class="btn-sm btn-primary" style="margin-top: 1rem; display: inline-block;">Back to Store</a>
+    </div>
+</section>
+{% endblock %}

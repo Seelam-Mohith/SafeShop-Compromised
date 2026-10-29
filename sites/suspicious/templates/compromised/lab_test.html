@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Lab Tests - ShopSafe Lab{% endblock %}
+{% block content %}
+<section class="section">
+    <h1 class="section-title">Cybersecurity Lab — Test Scenarios</h1>
+    <div class="alert">
+        These routes are simulated indicators for the Watering-Hole Detection
+        Laboratory. They are local-only, hard-coded, and contain no real
+        vulnerability, malware, credential collection, or external network
+        contact.
+    </div>
+
+    <div class="grid" style="margin-top: 1.5rem;">
+        <div class="product-card">
+            <div class="product-info">
+                <h3>A — Unexpected Redirect</h3>
+                <p class="product-desc">Returns HTTP 302 to a fixed local page.</p>
+                <code>/lab-test/redirect</code>
+                <a class="btn-sm btn-outline" href="{{ url_for('lab_redirect') }}">Run</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h3>B — Suspicious URL Path</h3>
+                <p class="product-desc">Static lab response at a suspicious path.</p>
+                <code>/lab-test/admin-test</code>
+                <a class="btn-sm btn-outline" href="{{ url_for('lab_admin_test') }}">Run</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h3>C — Abnormal HTTP Requests</h3>
+                <p class="product-desc">Records method + status (405 on POST).</p>
+                <code>/lab-test/method-check</code>
+                <a class="btn-sm btn-outline" href="{{ url_for('lab_method_check') }}">Run</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h3>D — Repeated Requests</h3>
+                <p class="product-desc">Lightweight endpoint for repeat testing.</p>
+                <code>/lab-test/repeat</code>
+                <a class="btn-sm btn-outline" href="{{ url_for('lab_repeat') }}">Run</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-info">
+                <h3>E — Unexpected Resource Origin</h3>
+                <p class="product-desc">Inert same-origin JavaScript resource.</p>
+                <code>/lab-test/resources/unapproved.js</code>
+                <a class="btn-sm btn-outline" href="{{ url_for('lab_resource_demo') }}">Run</a>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-top: 1.5rem; color: #64748b;">
+        Use <code>python tests/generate_test_traffic.py --help</code> to drive
+        these scenarios from the command line and inspect the resulting
+        <code>logs/compromised_access.jsonl</code> records.
+    </p>
+</section>
+{% endblock %}
