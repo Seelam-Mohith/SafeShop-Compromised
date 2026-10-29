@@ -1,0 +1,30 @@
+timestamp,site_identifier,http_method,requested_path,http_status_code,client_ip_address,request_id,indicator_type,severity,details
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,0402a1b4-9305-48f8-84ca-7e542fa6988e,unexpected_redirect,medium,HTTP 302 redirect observed to local test target
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,74df209f-2bf1-471a-b463-cf0f0a3a6e75,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,087e34a6-3860-4346-b0ef-e86b105bb34b,unexpected_redirect,medium,HTTP 302 redirect observed to local test target
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,edbb8b97-1a9f-4129-861b-a30faf8ccd09,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,4ddde172-9cde-469d-8a83-ef049bdd51c1,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,4ddde172-9cde-469d-8a83-ef049bdd51c1,abnormal_http_method,medium,Non-GET method POST to GET-only test route (responded 405)
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,22f5f8ee-32aa-4a10-b747-30e3c0d6d083,unexpected_redirect,medium,HTTP 302 redirect observed to local test target
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,a80cc52f-3837-4a14-88ee-2d8ffe118e69,suspicious_path,medium,Access to lab test path /lab-test/admin-test
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,73a91f2f-0add-4e6f-96d0-a3eda2b3baa5,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,73a91f2f-0add-4e6f-96d0-a3eda2b3baa5,abnormal_http_method,medium,Non-GET method POST to GET-only test route (responded 405)
+2026-10-28T17:09:58Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,9a2a0cbf-4dd1-4fc4-98b9-3fb420835653,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,e7e452d5-ecbd-4752-ae41-183d25efc1ad,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,e7e452d5-ecbd-4752-ae41-183d25efc1ad,abnormal_http_method,medium,Non-GET method POST to GET-only test route (responded 405)
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,78de0451-4de6-4bcb-919f-df95f0aee1af,unexpected_redirect,medium,HTTP 302 redirect observed to local test target
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,4251f38e-351e-412b-b87c-416ac9307f45,suspicious_path,medium,Access to lab test path /lab-test/admin-test
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,795726a7-69d0-421f-a9a7-96720d137728,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,795726a7-69d0-421f-a9a7-96720d137728,abnormal_http_method,medium,Non-GET method POST to GET-only test route (responded 405)
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,04c2bf7a-4d83-4d18-a886-fc382e6e47de,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,ab32045c-3802-4fa0-82f8-140b608bd21c,unexpected_redirect,medium,HTTP 302 redirect observed to local test target
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,b86e9602-08c6-47b3-a857-5006818b3493,suspicious_path,medium,Access to lab test path /lab-test/admin-test
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/method-check,200,127.0.0.1,a14d77da-e26d-404b-abce-1dab22a5769a,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-29T02:56:35Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,22b3cd4d-1c3e-4cad-ac35-0527df5c5af0,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-29T02:56:35Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,22b3cd4d-1c3e-4cad-ac35-0527df5c5af0,abnormal_http_method,medium,Non-GET method POST to GET-only test route (responded 405)
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,48bedfdb-4198-4ab8-a263-3b0bdd5bede0,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/admin-test,404,127.0.0.1,39ca8a09-ecd8-4301-b03e-9461b32a1097,suspicious_path,medium,Access to lab test path /lab-test/admin-test
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/method-check,404,127.0.0.1,d4d9613b-c06d-4384-8267-3138198abaf4,suspicious_path,medium,Access to lab test path /lab-test/method-check
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/resources/unapproved.js,404,127.0.0.1,0779443e-c076-423e-8797-fef79644a20d,unexpected_resource,medium,Request to local unapproved resource (path-level indicator)
+2026-10-29T02:56:36Z,,,/products,,127.0.0.1,,repeated_requests,high,10 requests to /products from 127.0.0.1 within 60 seconds
+2026-10-29T02:56:36Z,,,/lab-test/repeat,,127.0.0.1,,repeated_requests,high,27 requests to /lab-test/repeat from 127.0.0.1 within 60 seconds

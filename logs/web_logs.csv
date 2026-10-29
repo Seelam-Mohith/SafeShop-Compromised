@@ -1,0 +1,255 @@
+timestamp,site_identifier,http_method,requested_path,http_status_code,client_ip_address,user_agent,referrer,request_id
+2026-10-28T17:03:09Z,legitimate,GET,/,200,127.0.0.1,werkzeug/2.3.0,,74fa2e7e-fe3f-4dfa-9f29-15e6ede57e02
+2026-10-28T17:03:09Z,legitimate,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,1473c939-06d1-4575-b0db-37c5ef1dc39e
+2026-10-28T17:07:09Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,f3362809-43c1-4acb-8078-0e71ceac8235
+2026-10-28T17:07:51Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,e6c9c4df-60a4-460a-ad9e-22ca2e181399
+2026-10-28T17:07:51Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,af8c9fd7-71c8-481f-af20-cd20f338f87c
+2026-10-28T17:07:51Z,suspicious,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,7a9a8cfd-4e8e-4ce3-9e8a-181905407b99
+2026-10-28T17:07:51Z,suspicious,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,ae7a1a91-b730-4a04-9aad-622bf85c0322
+2026-10-28T17:07:51Z,suspicious,GET,/about,200,127.0.0.1,werkzeug/2.3.0,,77b06738-2d93-45a7-b8b2-c34de0106ce3
+2026-10-28T17:07:51Z,suspicious,GET,/about,200,127.0.0.1,werkzeug/2.3.0,,26d5daa1-0888-4b96-8cfc-ce7b728c10e4
+2026-10-28T17:07:51Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,62887144-9d0a-4c6e-a7f0-e403f4ba7943
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,werkzeug/2.3.0,,0402a1b4-9305-48f8-84ca-7e542fa6988e
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,039dd537-e0bb-4c11-8cbb-0642c1a347a0
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,3b72b5e8-0b28-46e5-871e-29032689e6e1
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,046d30da-b87b-4fc4-a0c1-407a96178de8
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,d5cf7327-cd6b-46b3-a52d-6600965f9c06
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,c07e0efb-9a89-45a7-8236-9f013cfa23cc
+2026-10-28T17:07:51Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,werkzeug/2.3.0,,74df209f-2bf1-471a-b463-cf0f0a3a6e75
+2026-10-28T17:08:48Z,legitimate,GET,/,200,127.0.0.1,werkzeug/2.3.0,,332d9de1-52a3-4f5e-a799-c5e8badd3c1e
+2026-10-28T17:08:48Z,legitimate,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,1be7fef8-ed08-438e-b7e7-4721a0a30ead
+2026-10-28T17:08:48Z,legitimate,GET,/about,200,127.0.0.1,werkzeug/2.3.0,,74da597f-45a6-4740-a374-c468a79bdd89
+2026-10-28T17:09:00Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,9dff6b84-1f92-4daf-a3ea-78ce11f8b1bc
+2026-10-28T17:09:31Z,legitimate,GET,/,200,127.0.0.1,werkzeug/2.3.0,,826535f8-8c28-4778-9035-43c0a75bb290
+2026-10-28T17:09:31Z,legitimate,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,7c33ff9b-4181-4332-ad46-16e8a90826f7
+2026-10-28T17:09:31Z,legitimate,GET,/about,200,127.0.0.1,werkzeug/2.3.0,,2765aa9a-ec15-45c1-baea-4090e81172d0
+2026-10-28T17:09:31Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,5c914a4d-5676-49e4-a97b-94008cea5b3e
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,werkzeug/2.3.0,,087e34a6-3860-4346-b0ef-e86b105bb34b
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,7332cfce-65f3-4cf0-add1-d1054818bc89
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,cd16da3d-be4b-4a89-9527-331658908bd9
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,2e6bc18e-9e59-468a-bb72-f20a10605d13
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,7e331cff-8318-42db-906d-1a5ca347bf58
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,0720d652-114a-4fc7-9d00-4b4a7f77a470
+2026-10-28T17:09:31Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,werkzeug/2.3.0,,edbb8b97-1a9f-4129-861b-a30faf8ccd09
+2026-10-28T17:09:57Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,3bd8b33d-cdbd-4af6-8961-c517d83bec15
+2026-10-28T17:09:57Z,suspicious,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,e777a988-dbaa-4aaa-a7d3-077ebb18ad8e
+2026-10-28T17:09:57Z,suspicious,GET,/static/css/style.css,200,127.0.0.1,werkzeug/2.3.0,,fa2b4b14-1eba-4be5-b280-1b8b96a31a2c
+2026-10-28T17:09:57Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,d1e5db62-5455-4ae4-a8f9-e4c8b580c7f0
+2026-10-28T17:09:57Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,3c54e297-69f7-486f-9ff3-7ffb7999078b
+2026-10-28T17:09:57Z,suspicious,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,3847696b-1809-4deb-b3f4-619a1dde83e9
+2026-10-28T17:09:57Z,suspicious,GET,/static/js/cart.js,200,127.0.0.1,werkzeug/2.3.0,,d278de7f-67c2-4d3e-a160-a3047f9462c6
+2026-10-28T17:09:57Z,suspicious,GET,/products,200,127.0.0.1,werkzeug/2.3.0,,e0ea35dc-b033-49a2-9cfb-920577126dcf
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,werkzeug/2.3.0,,4ddde172-9cde-469d-8a83-ef049bdd51c1
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,werkzeug/2.3.0,,22f5f8ee-32aa-4a10-b747-30e3c0d6d083
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,werkzeug/2.3.0,,a80cc52f-3837-4a14-88ee-2d8ffe118e69
+2026-10-28T17:09:57Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,werkzeug/2.3.0,,73a91f2f-0add-4e6f-96d0-a3eda2b3baa5
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,f4144856-1fef-41f5-9e61-1bc4c769003a
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,4c020e3a-34cd-47ce-8e68-a5ffb140b14e
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,a5c1aed9-b420-466b-9848-8c53fb8bac86
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,956473c0-ab38-4628-8ddc-31cfceef4120
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,8f27ac87-552c-4f9d-b737-60dc33031857
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,0afb0e40-5b0e-4f22-b3ab-0d629555bd49
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,ae27c917-3006-475e-bd58-1d29e9bfe0c1
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,fe1c77c2-d94a-4f3a-9627-d22937de06c8
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,c36cd4b1-da24-493d-ac8c-c38f0adc7e78
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,fca3a5c8-e9bb-4b56-888a-87509c58ec2e
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,2f0788db-d6b4-4d40-b64e-1850d38cad20
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,c1dad095-cce3-4257-a5f4-e686f8d01678
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,f01cb879-ee32-4d10-9faf-9f4415ee0551
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,23e75b4d-af99-483a-9d44-21dc2710d91b
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,39c67ddd-d16d-4915-bcfc-7b77ff40d197
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,5775d4a2-ad78-4e6c-8b26-fbf9c299b1d7
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,d5acf1c7-4a63-450c-9f46-af5637c4b50f
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,b60a5482-9e1e-476b-aff4-01936f0e6927
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,1cf7e15b-aa8d-4ad9-922f-992d099ea8ec
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,a02f7a98-d5ce-47bc-9ace-fe494139dfaa
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,16db4e9d-09db-4c5a-a635-a38dc93f311d
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,4247c4e3-b405-4aef-955d-75856dabdd39
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,399fed76-9d27-47a3-b5ab-17fc7c9dd033
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,f9b289fb-10cb-4ac7-9776-6ce8d16e62e7
+2026-10-28T17:09:57Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,werkzeug/2.3.0,,5715826d-8c0b-4314-b026-df2dee59522e
+2026-10-28T17:09:58Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,werkzeug/2.3.0,,9a2a0cbf-4dd1-4fc4-98b9-3fb420835653
+2026-10-28T17:09:58Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,cd7cc086-4c34-4ee6-99fb-21a602822d21
+2026-10-28T17:09:58Z,suspicious,GET,/lab-test/redirect,404,127.0.0.1,werkzeug/2.3.0,,988b74f1-2638-40f0-b899-07e435bf2a21
+2026-10-28T17:09:58Z,suspicious,GET,/,200,127.0.0.1,werkzeug/2.3.0,,017ea963-d284-4e27-8f62-09126f6acebe
+2026-10-28T17:09:58Z,suspicious,GET,/about,200,127.0.0.1,werkzeug/2.3.0,,810bf60b-4395-4091-aa3e-7a20525126ed
+2026-10-29T02:55:57Z,suspicious,GET,/dashboard,200,127.0.0.1,Werkzeug/3.1.9,,436a1561-dcba-43bb-887a-afdff7c0e323
+2026-10-29T02:56:24Z,legitimate,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,6bcba466-fdca-4337-bd20-c5c777f13275
+2026-10-29T02:56:24Z,legitimate,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,4629cb18-8d46-4d07-b125-e73bc2ee105c
+2026-10-29T02:56:24Z,legitimate,GET,/static/css/style.css,200,127.0.0.1,Werkzeug/3.1.9,,fe91a1e3-c6cf-4ca8-b653-d79a0dfb52de
+2026-10-29T02:56:24Z,legitimate,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,726d87ca-23c3-424d-8d48-96195399b832
+2026-10-29T02:56:24Z,legitimate,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,d4d15cbc-5b9b-4867-8d23-f68d32b7ca69
+2026-10-29T02:56:24Z,legitimate,GET,/product/1,200,127.0.0.1,Werkzeug/3.1.9,,8fb96b55-79b0-4cd5-9183-efa29691c8d7
+2026-10-29T02:56:25Z,legitimate,GET,/product/9999,404,127.0.0.1,Werkzeug/3.1.9,,0dc53932-f238-4f30-9196-f96c51027366
+2026-10-29T02:56:25Z,legitimate,GET,/nonexistent,404,127.0.0.1,Werkzeug/3.1.9,,946a584a-3c72-45d7-bf1b-37d2257dc348
+2026-10-29T02:56:25Z,legitimate,GET,/health,200,127.0.0.1,Werkzeug/3.1.9,,24c8f343-90c4-481a-aa99-09fdf5b5d6c4
+2026-10-29T02:56:25Z,legitimate,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,1a67b857-71c8-4d91-8b7a-b0d96685e9f2
+2026-10-29T02:56:25Z,legitimate,GET,/category/Electronics,200,127.0.0.1,Werkzeug/3.1.9,,52dad8b2-5036-4547-90b7-6297a562fa3e
+2026-10-29T02:56:34Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,09e4e155-cb77-473c-9703-18b788ff1a92
+2026-10-29T02:56:34Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,e1414886-9d04-4009-8c97-726570952539
+2026-10-29T02:56:34Z,suspicious,GET,/static/css/style.css,200,127.0.0.1,Werkzeug/3.1.9,,40867ac3-f041-40f6-988f-7a46a08fb221
+2026-10-29T02:56:34Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,7f399516-785d-4ec2-afe5-7c73d09ccbd9
+2026-10-29T02:56:34Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,2646cfe1-56c9-41e8-9a45-e23b5f806d43
+2026-10-29T02:56:34Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,2b2a5df0-23e9-4184-b584-169ce38485c3
+2026-10-29T02:56:34Z,suspicious,GET,/static/js/cart.js,200,127.0.0.1,Werkzeug/3.1.9,,847e717e-06a7-48a9-b4d0-b5974d20277d
+2026-10-29T02:56:34Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,2af480ac-9c92-4cbc-9f45-6e89f3af2850
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,Werkzeug/3.1.9,,e7e452d5-ecbd-4752-ae41-183d25efc1ad
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,Werkzeug/3.1.9,,78de0451-4de6-4bcb-919f-df95f0aee1af
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,Werkzeug/3.1.9,,4251f38e-351e-412b-b87c-416ac9307f45
+2026-10-29T02:56:34Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,Werkzeug/3.1.9,,795726a7-69d0-421f-a9a7-96720d137728
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,e67c7db0-ce93-4429-81a9-46fbc3205ab5
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,2237fad0-6450-4364-a9b4-73709502e344
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,64576439-fdda-47fd-9a04-f09cfb19c612
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,004d0278-1ebf-4864-8383-fc872c827c39
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,8156ec16-ef14-4f72-9519-a41b7605aebc
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,c6658f07-5779-4a5c-8849-65bad7ae4d70
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,0e28a3a3-c813-499d-8052-cc1fb0a16c80
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,23375e3d-2259-4939-979e-16d556fd739b
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,59a1f778-5d80-47d7-894d-6ff93246d12e
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,70423fce-c089-49fe-8496-36834d6f39ef
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,5d1f298e-423b-43e0-bbab-e5db55e52957
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,daaa5db6-f30d-4788-8fea-9ea225ebb883
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,d159effe-0b1f-467a-b281-dee51585d1ee
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,7c659805-d206-4823-b854-e3f53dce03c7
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,d964546c-255d-4b97-b73c-e14d2f1ec5dc
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,293396e9-ad6c-46e9-963a-5e9e2237c20e
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,cc4e1347-0d9e-4a51-9da5-97162e55faab
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,5ee7c2c1-8d37-4054-95a4-962067aa251f
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,6617f9d8-fbe0-4c6d-b4dc-aba2bad14e90
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,8fad3f59-564f-4061-808c-20e651015509
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,ef26836b-e0f4-41fe-9658-0cc3cf33c714
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,2e1a341e-9012-4769-8543-43384753d70f
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,efd52d27-2e67-484a-8dc6-c1c6c8ca757a
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,ef1e60c8-915f-42ac-981c-d26acba330f9
+2026-10-29T02:56:34Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,2768313d-b93b-4651-8284-8b70042d3ab1
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,Werkzeug/3.1.9,,04c2bf7a-4d83-4d18-a886-fc382e6e47de
+2026-10-29T02:56:35Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,b9b7c664-acae-4a28-84e6-d3502ef356ca
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect,404,127.0.0.1,Werkzeug/3.1.9,,a0f280aa-7c7c-45d9-ab2b-5701c6599360
+2026-10-29T02:56:35Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,deae5df5-7678-4377-a791-d9c12f44ed16
+2026-10-29T02:56:35Z,suspicious,GET,/about,200,127.0.0.1,Werkzeug/3.1.9,,21aef8d4-2f5f-485c-9007-bb3222edf9c0
+2026-10-29T02:56:35Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,b7b2ae2f-0a20-4995-b0d9-f201de012f40
+2026-10-29T02:56:35Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,1721b1af-1295-4df3-ad5e-85ddd2c3446e
+2026-10-29T02:56:35Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,441c47fb-adce-414f-b883-9cbca9ad3770
+2026-10-29T02:56:35Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,3d44a5db-0b87-4d7b-8b91-bc9a66b2f4a4
+2026-10-29T02:56:35Z,suspicious,GET,/product/1,200,127.0.0.1,Werkzeug/3.1.9,,222b7390-cc6e-4671-844e-eed348fdbc22
+2026-10-29T02:56:35Z,suspicious,GET,/product/9999,404,127.0.0.1,Werkzeug/3.1.9,,26a2aea8-2550-473e-9a4c-ec32c109dbfe
+2026-10-29T02:56:35Z,suspicious,GET,/category/Electronics,200,127.0.0.1,Werkzeug/3.1.9,,68a8eeca-2f03-4baa-91b6-a40248047fd9
+2026-10-29T02:56:35Z,suspicious,GET,/about,200,127.0.0.1,Werkzeug/3.1.9,,802ec45e-b8f7-4e36-ad06-eb2972518ccc
+2026-10-29T02:56:35Z,suspicious,GET,/privacy,200,127.0.0.1,Werkzeug/3.1.9,,29c7ce40-acd5-42e8-a818-a441c2d6f5c4
+2026-10-29T02:56:35Z,suspicious,GET,/contact,200,127.0.0.1,Werkzeug/3.1.9,,4c646ed1-b214-427c-a3f3-0cd4520c8b58
+2026-10-29T02:56:35Z,suspicious,GET,/cart,200,127.0.0.1,Werkzeug/3.1.9,,b64b44b9-b043-4df5-9c04-2a68b9e88fdd
+2026-10-29T02:56:35Z,suspicious,GET,/definitely-not-a-route,404,127.0.0.1,Werkzeug/3.1.9,,7e0918f4-4c9f-4efe-b84c-e347087c31b0
+2026-10-29T02:56:35Z,suspicious,GET,/health,200,127.0.0.1,Werkzeug/3.1.9,,d5983332-d690-4319-8079-d7e308486381
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/,200,127.0.0.1,Werkzeug/3.1.9,,2e96a822-c89b-40e7-860b-f694c3af0583
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,Werkzeug/3.1.9,,ab32045c-3802-4fa0-82f8-140b608bd21c
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect-target,200,127.0.0.1,Werkzeug/3.1.9,,08c7ad29-3a25-433c-a294-000c791d9fae
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/admin-test,200,127.0.0.1,Werkzeug/3.1.9,,b86e9602-08c6-47b3-a857-5006818b3493
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/method-check,200,127.0.0.1,Werkzeug/3.1.9,,a14d77da-e26d-404b-abce-1dab22a5769a
+2026-10-29T02:56:35Z,suspicious,POST,/lab-test/method-check,405,127.0.0.1,Werkzeug/3.1.9,,22b3cd4d-1c3e-4cad-ac35-0527df5c5af0
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,Werkzeug/3.1.9,,2bc8b7fb-b433-499a-92c6-dd1fbf3100e3
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/resources/unapproved.js,200,127.0.0.1,Werkzeug/3.1.9,,48bedfdb-4198-4ab8-a263-3b0bdd5bede0
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/resource-demo,200,127.0.0.1,Werkzeug/3.1.9,,03527b3c-dca7-439e-be44-830bfc7eeb7c
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/,404,127.0.0.1,Werkzeug/3.1.9,,5ccb563c-8515-42a0-a3ab-aa317d3dc787
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect,404,127.0.0.1,Werkzeug/3.1.9,,d60dd473-36d0-4972-b6eb-d489fc9dd9c3
+2026-10-29T02:56:35Z,suspicious,GET,/lab-test/redirect-target,404,127.0.0.1,Werkzeug/3.1.9,,2bc697bb-7279-42ba-b0e8-ef77698f9e42
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/admin-test,404,127.0.0.1,Werkzeug/3.1.9,,39ca8a09-ecd8-4301-b03e-9461b32a1097
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/method-check,404,127.0.0.1,Werkzeug/3.1.9,,d4d9613b-c06d-4384-8267-3138198abaf4
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/repeat,404,127.0.0.1,Werkzeug/3.1.9,,bd374392-afeb-46b9-9a7a-d154688730be
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/resource-demo,404,127.0.0.1,Werkzeug/3.1.9,,d559546c-ee3b-4213-aa99-d1906764d376
+2026-10-29T02:56:36Z,suspicious,GET,/lab-test/resources/unapproved.js,404,127.0.0.1,Werkzeug/3.1.9,,0779443e-c076-423e-8797-fef79644a20d
+2026-10-29T02:56:36Z,suspicious,GET,/,200,127.0.0.1,Werkzeug/3.1.9,,974cef09-70ec-4916-afe1-f67b0d48f171
+2026-10-29T02:56:36Z,suspicious,GET,/products,200,127.0.0.1,Werkzeug/3.1.9,,3a32caa2-b824-4edf-baa5-666d5b3c27de
+2026-10-29T02:56:36Z,suspicious,GET,/health,200,127.0.0.1,Werkzeug/3.1.9,,392918e2-87b7-4640-8b60-675deec4d0ed
+2026-10-29T03:13:09Z,suspicious,GET,/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,939b10f6-e5ff-4e7e-9d3f-6cfcfaa9a715
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/headphones.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,3273e033-500c-4870-8f74-642855f810c7
+2026-10-29T03:13:09Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,a059ae9e-c37b-4dd9-b5bd-fd4914f7a657
+2026-10-29T03:13:09Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,07405ecd-711c-4086-823c-2e75cd9f608b
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/sunglasses.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,6c01f628-6312-4d7f-88aa-380948f34ce3
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/jeans.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,7c488925-a4aa-454e-abcb-7c868eef1bb7
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/watch.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,45bb1bf0-221b-482a-af44-0f7ab48fc635
+2026-10-29T03:13:09Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,32443b27-d4af-4925-b7c7-8d1763aa4660
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/keyboard.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,30bd61fa-88e2-4d24-b2d3-f1e2256ba55c
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/cookware.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,f4b22809-352b-4887-8af8-9a1fa3a2326b
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/book.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,98f8d5f4-f2f2-4c21-8d4c-72797c4399b5
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/bottle.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,010868de-fa4d-448c-b0c9-deb13651817c
+2026-10-29T03:13:09Z,suspicious,GET,/static/images/backpack.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,7c7c32b5-077c-4568-91a3-73c120fedb26
+2026-10-29T03:13:15Z,suspicious,GET,/dashboard,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,37915f57-fc30-48ce-8993-88cfa80be7ed
+2026-10-29T03:13:15Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,865b08a7-2da3-47c8-820c-fe8def385544
+2026-10-29T03:13:16Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,2680005d-604c-4543-b6bd-a395f170fff7
+2026-10-29T03:13:16Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,f4b3f935-4157-4816-8668-6093f6549dad
+2026-10-29T03:13:25Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,2d6b94c5-5b76-4f99-973e-0f4692bb2ff5
+2026-10-29T03:13:25Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,1098a3be-9019-4fc7-8ce1-03c120670a29
+2026-10-29T03:13:25Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,2aa06502-3e6d-4a65-ad9b-6b418694a948
+2026-10-29T03:13:25Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,f9d54e43-cd02-4ea9-be2e-292a6d9da382
+2026-10-29T03:13:26Z,suspicious,GET,/lab-test/method-check,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,6bc5dfa7-6e05-4256-a684-8e6d1b87d188
+2026-10-29T03:13:26Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/method-check,f675ab45-d246-462f-9315-7ad661537e5d
+2026-10-29T03:13:26Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/method-check,b77cc554-ff49-4ec7-b8bf-8dd0f8e96629
+2026-10-29T03:13:26Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/method-check,01c0378a-3cc6-462c-ba12-12e37bf160d7
+2026-10-29T03:13:28Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/method-check,454243b5-42ca-40db-a5c7-4928f76de929
+2026-10-29T03:13:28Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,74f87621-00b6-4db7-aff7-7dc228006d71
+2026-10-29T03:13:28Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,f0cef89c-d325-435b-94fc-9bbb41de753a
+2026-10-29T03:13:28Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,02151e72-0190-4b22-a2e5-37f32951846b
+2026-10-29T03:13:30Z,suspicious,GET,/dashboard,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,3ec84e33-09c1-46c9-9413-a8934f60f2ad
+2026-10-29T03:13:30Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,cda7e058-557c-4625-9f17-54123e94fc0a
+2026-10-29T03:13:30Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,0657b2ad-6609-40b8-92ec-7e4261a57323
+2026-10-29T03:13:30Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,2c798db0-4752-473a-9e3b-6ee0c60be832
+2026-10-29T03:13:53Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,4282134e-9617-415c-a512-351261dac368
+2026-10-29T03:13:53Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,0e0f90b3-99a7-4cef-b4aa-e50e8453b85f
+2026-10-29T03:13:53Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,0cc02662-1cac-4d7b-b8a6-2d2806ddb955
+2026-10-29T03:13:53Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,e544cdda-d833-4864-b1a6-8f52e6829bd9
+2026-10-29T03:13:55Z,suspicious,GET,/lab-test/repeat,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,15419e21-322f-4b5c-a863-2bfb807ce75b
+2026-10-29T03:13:58Z,suspicious,GET,/dashboard,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,1eaa83bb-6296-49bb-a1f5-421f711f21ab
+2026-10-29T03:13:58Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,73521689-63ea-4e12-b95c-bd2dcbbecdf6
+2026-10-29T03:13:58Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,0aac6838-1157-4669-9ecf-3f4ff9a1fe0a
+2026-10-29T03:13:58Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,ac6cd485-aa79-4cce-9e82-9b4b15b2ab17
+2026-10-29T04:12:53Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,842fbb37-8e1c-46ba-a182-da127be7fa38
+2026-10-29T04:12:53Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,af18ff04-1e87-4b9c-be5a-80e5b8d79353
+2026-10-29T04:12:53Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,fd6cca58-4d66-4f36-9ede-48acd9e3817b
+2026-10-29T04:12:53Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,364a0542-6e8f-4089-b6a0-3396a6a09f25
+2026-10-29T04:20:10Z,suspicious,GET,/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,60991736-591f-4203-abdd-6ece1f948c88
+2026-10-29T04:20:10Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,8fd1d197-9356-463f-a87c-4f926117a6ed
+2026-10-29T04:20:10Z,suspicious,GET,/static/images/headphones.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,eb7c24b5-549b-4e43-8a25-25dd49f90d28
+2026-10-29T04:20:10Z,suspicious,GET,/static/images/keyboard.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,4ce7bce0-0876-4de9-9dce-0d19cb893525
+2026-10-29T04:20:10Z,suspicious,GET,/static/images/backpack.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,a8a6f991-454d-4601-91b5-ea9ada6b3c1b
+2026-10-29T04:20:10Z,suspicious,GET,/static/images/bottle.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,b116f2c4-6bad-4af9-a62e-c95be883d66b
+2026-10-29T04:20:10Z,suspicious,GET,/static/images/book.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,f1b4aafc-17ae-4c51-9874-79829e084674
+2026-10-29T04:20:10Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,7ad686ad-8d2b-4d96-a20c-9e78725b7e88
+2026-10-29T04:20:10Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,aeac8f8a-11d5-4487-bf77-cd8b3333777d
+2026-10-29T04:20:11Z,suspicious,GET,/static/images/sunglasses.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,c22abd78-6f9f-48fc-a8a5-f197f5734698
+2026-10-29T04:20:11Z,suspicious,GET,/static/images/jeans.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,26dd6303-e83e-4a43-a4dc-6e43e88b63b9
+2026-10-29T04:20:11Z,suspicious,GET,/static/images/watch.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,8b15af77-f009-418d-8d17-3717a68ecc81
+2026-10-29T04:20:11Z,suspicious,GET,/static/images/cookware.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,3d523942-bdaa-4044-8254-83fb48b81125
+2026-10-29T04:21:18Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,36064ed6-48ca-4198-9b98-f9762c2539bd
+2026-10-29T04:21:18Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,80012eb8-e1c3-4a1d-aa54-652384d29c0f
+2026-10-29T04:21:18Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,ffc0a65d-c095-4cec-ad76-b099592b8319
+2026-10-29T04:21:18Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,2a23879d-d6b9-4086-acaa-75ebd0977ff3
+2026-10-29T04:21:59Z,suspicious,GET,/lab-test/redirect,302,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,0797c6f4-57eb-4ae9-b13f-2e3d8e81f8f7
+2026-10-29T04:21:59Z,suspicious,GET,/lab-test/redirect-target,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,cd4496fc-dd15-4da8-8424-c90da2dbb8e1
+2026-10-29T04:21:59Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/redirect-target,e083d154-238e-4856-89e6-c543133a27d1
+2026-10-29T04:21:59Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/redirect-target,dde776fd-686d-4ad6-b12f-2ed33459809b
+2026-10-29T04:21:59Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/redirect-target,8e3b5091-e6cf-4c2e-9c26-b7ebff661809
+2026-10-29T04:22:02Z,suspicious,GET,/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/redirect-target,9d33dda1-5fe3-4c26-9263-52e0d937990a
+2026-10-29T04:22:02Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,d12d2d32-0749-42b7-a5be-95dcd85362b3
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/headphones.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,a66b573d-5a7c-4d1c-986e-045425529ee8
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/keyboard.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,66163934-91a1-4523-934e-5a80142db3d9
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/backpack.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,33ff3c01-c54f-4afb-a397-f64b22c04e01
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/bottle.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,601f73a8-c2ea-47d5-a966-e75835aa566f
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/book.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,283d313a-ead3-4f5a-a66a-c25d6e81af8b
+2026-10-29T04:22:03Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,0a6fd739-5ab2-4112-af79-06f8ea79bb3f
+2026-10-29T04:22:03Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,7018141f-12ec-4f89-9664-2fd0b8f74557
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/sunglasses.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,dbd2569f-75a2-498c-af3b-9d6b13fba952
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/jeans.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,80885908-e28c-4e60-a19e-b876163e40bb
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/watch.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,62e16b4f-8ffa-4e22-b9e6-e7c2ea6623c8
+2026-10-29T04:22:03Z,suspicious,GET,/static/images/cookware.svg,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,6a1f22de-e654-476c-a12c-8f9df8ff3c71
+2026-10-29T04:22:03Z,suspicious,GET,/dashboard,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/,71d6f640-2a52-4c77-a580-6c028e01699f
+2026-10-29T04:22:04Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,98e713b9-37b0-4fc8-93c1-02b3f7fecf5e
+2026-10-29T04:22:04Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,381ab22a-be01-4f2e-a0f7-2e241bf7b636
+2026-10-29T04:22:04Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,e354cd01-2a6f-4e88-b4fd-d9b691259793
+2026-10-29T04:22:21Z,suspicious,GET,/lab-test/,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,667804d3-69e3-4a9d-a8c6-d38e6b82c583
+2026-10-29T04:22:21Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,8cef328b-1c44-4cbe-9af9-2e8b156bde0c
+2026-10-29T04:22:21Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,9fc0ede3-d51e-41d0-b985-0c240cdc266c
+2026-10-29T04:22:21Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,0e02ed7b-8e1e-4257-956a-f294b4971ebd
+2026-10-29T04:23:23Z,suspicious,GET,/dashboard,200,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/lab-test/,1b77d860-1410-4a2e-9759-3eaae12b4642
+2026-10-29T04:23:23Z,suspicious,GET,/static/css/style.css,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,8b57450a-a367-4b1e-819d-c3b47561e077
+2026-10-29T04:23:23Z,suspicious,GET,/static/js/main.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,2a082691-e49f-48ae-aee0-20bb901984af
+2026-10-29T04:23:23Z,suspicious,GET,/static/js/cart.js,304,127.0.0.1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",http://127.0.0.1:5001/dashboard,098cbdeb-ada1-441f-a763-1af21168c18a
