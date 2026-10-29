@@ -35,6 +35,7 @@ from services.product_service import (
     get_products_by_category,
     load_products,
 )
+from shared.dashboard import register_dashboard_routes
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 LAB_JS_DIR = os.path.join(BASE_DIR, "static", "lab")
@@ -80,6 +81,25 @@ def create_app(config_object=Config, **overrides):
     register_lab_routes(app)
     register_error_handlers(app)
     register_context(app)
+    register_dashboard_routes(app)
+
+    # Also feed the centralized CSV log used by the dashboard. Skipped under
+    # tests so the real log file is never touched by the test suite.
+    if not app.config.get("TESTING"):
+        try:
+            from shared.web_logger import get_web_logger
+
+            central_logger = get_web_logger("suspicious", base_dir=BASE_DIR)
+
+            @app.after_request
+            def _central_log(response):
+                try:
+                    central_logger.log_request(request, response)
+                except Exception:
+                    pass
+                return response
+        except Exception:
+            pass
 
     return app
 
