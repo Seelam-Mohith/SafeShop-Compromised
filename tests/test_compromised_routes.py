@@ -51,6 +51,19 @@ def test_lab_index_available_when_simulation_enabled(client):
     assert client.get("/lab-test/").status_code == 200
 
 
+def test_dashboard_page_loads(client):
+    response = client.get("/dashboard")
+    assert response.status_code == 200
+    assert b"Security Dashboard" in response.data
+    assert b"Web Logs" in response.data
+    assert b"Detected Attacks" in response.data
+
+
+def test_dashboard_unavailable_when_simulation_disabled(make_app):
+    app = make_app(simulation=False)
+    assert app.test_client().get("/dashboard").status_code == 404
+
+
 # --- Scenario A: redirect ----------------------------------------------------
 
 def test_redirect_returns_302_to_fixed_local_target(client):
